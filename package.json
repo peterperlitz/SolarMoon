@@ -1,8 +1,7 @@
 {
-  "name": "solidity-ts-dev-stack-example",
-  "version": "0.0.2",
+  "name": "solarmoon",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "build": "npm run clean && npm run compile",
     "clean": "npx hardhat clean",
@@ -42,6 +41,8 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.1.0",
-    "@openzeppelin/test-helpers": "^0.5.11"
+    "@openzeppelin/test-helpers": "^0.5.11",
+    "hardhat-deploy": "^0.8.8",
+    "solc": "^0.8.6"
   }
 }
