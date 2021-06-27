@@ -1,4 +1,5 @@
 node_modules
+build/
 artifacts/**
 typechain/**
 cache/**
