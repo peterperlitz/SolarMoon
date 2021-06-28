@@ -31,7 +31,6 @@ contract Solarmoon is Ownable, IERC20 {
     mapping(address => ExemptionStats) private _exemptions;
     mapping(address => mapping(address => uint256)) private _allowances;
 
-    uint256 public _totalSupply = 10e23;
     string private _name = "Solarmoon";
     string private _symbol = "SOLAR";
 
@@ -178,7 +177,7 @@ contract Solarmoon is Ownable, IERC20 {
      *
      */
     function updateLiquidityThreshold(uint256 threshold) external onlyOwner {
-        require(threshold > 0, "SaveYourAssets: Cannot set threshold to zero");
+        require(threshold > 0, "Solarmoon: Cannot set threshold to zero");
         tokenLiquidityThreshold = threshold;
 
         emit LiquidityThresholdUpdated(tokenLiquidityThreshold);
