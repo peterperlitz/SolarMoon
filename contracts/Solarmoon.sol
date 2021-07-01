@@ -83,6 +83,10 @@ contract Solarmoon is Ownable, IERC20 {
         return _stats.totalTokens;
     }
 
+    function totalFees() external view returns (uint256) {
+        return _stats.totalFees;
+    }
+
     /**
      * @dev function to migrate liquidity to pancakeSwap
      *
